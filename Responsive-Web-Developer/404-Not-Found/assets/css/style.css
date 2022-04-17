@@ -1,0 +1,144 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat@500;700&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Space Mono', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 77px;
+    display: flex;
+}
+
+nav {
+    margin: 4rem 0;
+    padding: 0;
+}
+
+nav h1 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -2.4px;
+}
+
+main {
+    display: flex;
+}
+
+.bloc {
+}
+
+.bloc.left {
+    width: 50%;
+    justify-content: center;
+}
+
+.bloc.right{
+    display: flex;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 2rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+}
+
+
+.bloc.left img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.bloc h2 {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 6.4rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.bloc p {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    padding: 0;
+    letter-spacing: -1.6px;
+}
+
+.bloc a {
+    font-size: 1.4rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    max-width: 20rem;
+    padding: 1.4rem 0;
+}
+
+footer {
+    margin: 2.4rem 0;
+    width: 100%;
+    font-family: 'Montserrat', monospace;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #bdbdbd;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+}
+
+footer .container p {
+    margin-top: 1.6rem;
+    text-align: center;
+}
+
+strong {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 426px) {
+    nav {
+        margin: 2rem 0;
+    }
+    .container {
+        display: block;
+        padding: 0 2rem;
+    }
+
+    .container .bloc {
+        width: 100%;
+    }
+    
+    .container .bloc h2 {
+        font-size: 4.8rem;
+    }
+    .container .bloc p {
+        font-size: 1.8rem;
+    }
+}
