@@ -69,5 +69,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ## Contact
 
 - Website [My Portfolio](https://vincentfqt.github.io)
-- GitHub [@vincentfqt](https://github.com/vincentfqt})
+- GitHub [@vincentfqt](https://github.com/vincentfqt)
 
