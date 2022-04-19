@@ -5,12 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const navElement = document.querySelector('header nav');
     
     burgerElement.addEventListener('click', () => {
-        console.log('click open burger');
         navElement.classList.add('active');
         closeElement.classList.add('active');
     });
     closeElement.addEventListener('click', () => {
-        console.log('click close burger');
         navElement.classList.remove('active');
         closeElement.classList.remove('active');
     });
