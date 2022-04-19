@@ -42,7 +42,7 @@ a:hover {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    padding: 0.8rem 0;
+    /* padding: 0.8rem 0; */
     border-bottom: 0.2rem solid #fff;
 }
 
@@ -126,9 +126,22 @@ main {
     margin-bottom: 2rem;
 }
 
+.description .link {
+    display: flex;
+    align-items: center;
+}
+
 .description a {
+    font-style: none;
     font-weight: 700;
+    line-height: 3rem;
     margin-bottom: 2rem;
+}
+
+.description .material-icons {
+    align-self: flex-start;
+    font-size: 3rem;
+    margin-bottom: 0;
 }
 
 .gallery {
