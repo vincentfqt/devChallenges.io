@@ -171,11 +171,17 @@ section ul {
     list-style: none;
 }
 
+section ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 section ul li>span {
     font-size: 1.6rem;
     line-height: 1.6rem;
     color: #828282;
-    margin: 0;
+    margin: 0 1rem;
     padding: 0;
 
 }
@@ -186,6 +192,7 @@ section ol {
 }
 
 section ol li {
+    display: flex;
     margin-bottom: 2rem;
     text-align: justify;
 }
