@@ -34,13 +34,31 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
+
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 4.8rem;
     line-height: 5rem;
     font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    font-style: italic;
     margin-bottom: 2rem;
 }
 
@@ -53,8 +71,138 @@ header .info {
     font-style: italic;
 }
 
-header .info .material-icons {
-    align-self: baseline;
-    transform: rotate(90deg);
-    color: #C4C4C4;
+header .info>img {
+    width: 2rem;
+    height: 2.8rem;
+    margin-right: 1rem;
+}
+
+main {
+    position: relative
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 70%;
+}
+
+main aside {
+    position: absolute;
+    min-width: 20%;
+    top: 0;
+    right: 0
+}
+
+.cook-info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.cook-info ul>li>span:first-child {
+    height: 100%;
+}
+
+.cook-info ul>li>p>span:first-child {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #BDBDBD;
+    text-transform: uppercase;
+}
+
+.cook-info ul>li>p>span:nth-child(2) {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333;
+
+}
+
+.cook-info ul li p {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.yields>span {
+    color: #F2994A;
+}
+
+.yields>p>span:nth-child(2) {
+    color: #F2994A;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    main aside {
+        position: static;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    main aside ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "hd . .";
+    }
+    
+    
+    .cook-info ul li {
+        display: flex;
+    }
+    
+    .cook-info ul li.yields {
+        grid-area: hd;
+    }
+
+    main section {
+        width: 100%;
+    }
+}
+
+
+section ul {
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+section ul li>span {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #828282;
+    margin: 0;
+    padding: 0;
+
+}
+
+section ol {
+    list-style: none;
+    counter-set: span 0;
+}
+
+section ol li {
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+section ol li span::before {
+    counter-increment: span;
+    content: counters(span, " ") " ";
+    display: inline-block;
+    width: 3.6rem;
+    height: 3.6rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: #F2994A;
+    margin-right: 1rem;
 }
